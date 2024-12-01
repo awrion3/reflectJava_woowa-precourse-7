@@ -36,7 +36,7 @@ public class LottoGameTest {
                     LottoGame lottoGame = new LottoGame(lottoMachine, jackpotNumbers, bonus);
 
                     double winningsRate = lottoGame.getLottoWinningsRate(lottoMachine);
-                    double expectedRate = (PRIZE_SECOND_AMOUNT / lottoMachine.getBuyAmount()) * HUNDRED_VALUE;
+                    double expectedRate = ((double) PRIZE_SECOND_AMOUNT / lottoMachine.getBuyAmount()) * HUNDRED_VALUE;
 
                     assertEquals(winningsRate, expectedRate);
                 },
