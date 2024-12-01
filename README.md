@@ -4,7 +4,7 @@
 
 ### 목차
 
-|Project|Mission|Term|Repository|Refactor|
+|Project|Mission|Term|Repository|Revision|
 |:-----:|:-----:|:--:|:--------:|:------:|
 |문자열 덧셈 계산기|https://github.com/woowacourse-precourse/java-calculator-7|15~21.OCT|https://github.com/awrion3/java-calculator-7/tree/awrion3|https://github.com/awrion3/reflectJava_woowa-precourse-7/tree/calculator|
 |자동차 경주 게임|https://github.com/woowacourse-precourse/java-racingcar-7|22~28.OCT|https://github.com/awrion3/java-racingcar-7/tree/awrion3|https://github.com/awrion3/reflectJava_woowa-precourse-7/tree/racingcar|
