@@ -72,7 +72,7 @@ public class LottoGame {
     }
 
     public double getLottoWinningsRate(LottoMachine lottoMachine) {
-        double winningsRate = LottoPrize.getTotalPrizeAmount() / lottoMachine.getBuyAmount();
+        double winningsRate = (double) LottoPrize.getTotalPrizeAmount() / lottoMachine.getBuyAmount();
         return winningsRate * HUNDRED_VALUE;
     }
 }
