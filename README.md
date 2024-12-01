@@ -69,6 +69,9 @@
 
 ### 프로그래밍 요구 사항
 
+* indent(인덴트, 들여쓰기) depth는 2까지만 허용한다.
+    - 예를 들어 while문 안에 if문이 있으면 들여쓰기는 2이다.
+
 * `camp.nextstep.edu.missionutils`에서 제공하는`Randoms`및`Console API`를 사용하여 구현해야 한다.
     - Random 값 추출은`camp.nextstep.edu.missionutils.Randoms`의`pickNumberInRange()`를 활용한다.
     - 사용자가 입력하는 값은`camp.nextstep.edu.missionutils.Console`의`readLine()`을 활용한다.
