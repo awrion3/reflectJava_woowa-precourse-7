@@ -121,7 +121,7 @@
         - 로또 번호의 숫자 범위가 1부터 45 사이인지 검증
             * `[ERROR] 로또 번호는 1부터 45 사이의 숫자여야 합니다.` 에러 메시지 출력
 
-    - [ ] lottoMachine
+    - [x] lottoMachine
         - 로또 1장의 가격은 1,000원이며, 1,000원 단위이고, 최소 1000원 이상인지 검증
         - 1개의 로또를 발행할 때, 중복되지 않는 6개의 숫자를 `Randoms API` 사용해 생성
             * `Randoms.pickUniqueNumbersInRange(1, 45, 6);`
@@ -156,7 +156,7 @@
     - [x] lottoTest
         - 예외: 로또 당첨 번호가 잘못된 경우
 
-    - [ ] lottoMachineTest
+    - [x] lottoMachineTest
         - 기능: 티켓 수량 계산 및 생성 크기 확인
         - 예외: 구입 금액이 잘못된 경우
 
