@@ -41,7 +41,7 @@ public class Manager {
         if (product.getQuantity() < (order.getQuantity() + promotion.get())) {
             return false;
         }
-        return (promotion.get() == (order.getQuantity() % calculatePromotionUnit(promotion)));
+        return (promotion.buy() == (order.getQuantity() % calculatePromotionUnit(promotion)));
     }
 
     private int calculatePromotionUnit(Promotion promotion) {
