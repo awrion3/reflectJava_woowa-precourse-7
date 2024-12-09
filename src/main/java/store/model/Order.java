@@ -3,6 +3,7 @@ package store.model;
 import static store.common.Constant.INDEX_ONE;
 import static store.common.Constant.REGEX;
 import static store.common.Constant.SEPARATOR;
+import static store.common.Constant.VALUE_ZERO;
 import static store.common.Exception.INVALID_ORDER_FORMAT;
 import static store.common.Exception.INVALID_ORDER_NAME;
 import static store.common.Exception.INVALID_ORDER_QUANTITY;
@@ -42,6 +43,9 @@ public class Order {
     private void validateQuantity(String order, Products products) {
         int index = order.indexOf(SEPARATOR);
         quantity = Integer.parseInt(order.substring(index + INDEX_ONE, order.length() - INDEX_ONE));
+        if (quantity <= VALUE_ZERO) {
+            throw new IllegalArgumentException(INVALID_ORDER_QUANTITY);
+        }
         int totalQuantity = products.calculateProductPairTotalQuantity(name);
         if (totalQuantity < quantity) {
             throw new IllegalArgumentException(INVALID_ORDER_QUANTITY);
