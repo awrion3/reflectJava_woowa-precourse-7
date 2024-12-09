@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Orders {
-    List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();
 
     public Orders(String response, Products products) {
         validateResponse(response);
