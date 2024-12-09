@@ -11,7 +11,7 @@ import store.util.Reader;
 public class Products {
     private static final String FILE_NAME = "products.md";
 
-    List<Product> products = new ArrayList<>();
+    private List<Product> products = new ArrayList<>();
 
     public Products() {
         initProducts();
