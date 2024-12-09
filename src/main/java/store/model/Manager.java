@@ -7,8 +7,8 @@ import java.util.List;
 import store.view.Input;
 
 public class Manager {
-    List<Order> bonusPromotionOrders = new ArrayList<>();
-    List<Order> noPromotionOrders = new ArrayList<>();
+    private List<Order> bonusPromotionOrders = new ArrayList<>();
+    private List<Order> noPromotionOrders = new ArrayList<>();
 
     public Manager(Orders orders, Products products, Promotions promotions) {
         evaluateBonusPromotion(orders, promotions);
