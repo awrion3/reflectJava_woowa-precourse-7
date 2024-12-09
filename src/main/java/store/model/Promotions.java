@@ -15,7 +15,7 @@ import store.util.Reader;
 public class Promotions {
     private static final String FILE_NAME = "promotions.md";
 
-    List<Promotion> promotions = new ArrayList<>();
+    private List<Promotion> promotions = new ArrayList<>();
 
     public Promotions() {
         initPromotions();
