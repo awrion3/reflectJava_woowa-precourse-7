@@ -6,9 +6,9 @@ import static store.common.Constant.VALUE_PERCENT;
 import static store.common.Constant.VALUE_ZERO;
 
 public class Cashier {
-    int membershipDiscount = VALUE_ZERO;
-    int bonusDiscount = VALUE_ZERO;
-    int totalCost = VALUE_ZERO;
+    private int membershipDiscount = VALUE_ZERO;
+    private int bonusDiscount = VALUE_ZERO;
+    private int totalCost = VALUE_ZERO;
 
     public Cashier(String response, Orders orders, Manager manager) {
         calculateMembershipDiscount(response, manager);
