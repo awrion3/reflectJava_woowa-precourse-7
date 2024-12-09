@@ -72,6 +72,9 @@ public class Output {
     private static void formatBonus(Manager manager) {
         System.out.println("===========증\t정=============");
         for (Order order : manager.getBonusPromotionOrders()) {
+            if (order.getQuantity() == VALUE_ZERO) {
+                continue;
+            }
             System.out.printf("%-7s\t\t%d\n", order.getName(), order.getQuantity());
         }
     }
